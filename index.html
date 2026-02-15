@@ -82,7 +82,7 @@
   const vote = {
     init: ()=>{
       vote.client = new tmi.client({
-      	options: { debug: false },
+      	options: { debug: true },
       	connection: { cluster: "aws", reconnect: true },
         channels: [vote.channel]
       })
